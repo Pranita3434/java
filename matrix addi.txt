@@ -1,0 +1,18 @@
+// Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+
+class HelloWorld {
+    public static void main(String[] args) {
+        int a[][]={{6,8,9,10},{1,2,3,4},{3,5,4,6},{6,3,2,6}};
+        int sum=0;
+        for(int r=0;r<4;r++)
+        {
+            for(int c=0;c<4;c++)
+            {
+                if((r+c)==3)
+                sum=sum+a[r][c];
+            }
+        }
+        System.out.println(sum);
+    }
+}

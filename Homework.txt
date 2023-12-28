@@ -1,0 +1,593 @@
+HOmework
+
+
+
+
+1.find duplicate no form array using single loop??
+
+2.sort given array using loop
+
+3.wap to display max no form using having max digit addition 
+ {12,78,94,64,19,62}
+
+1march2023-->
+4.WAP to display fibonacci series as per given limit value??
+5.WAP to display nth element of finonacii series?
+
+
+*recursion 
+ a function called itself is called recursion.
+
+fibo1 and fibo2
+
+1.   1 3 5 7 11 13 17 19 23.....
+2.   1 4 9 16 25 36.....
+3.   1 3 6 10 15 21.....
+4.   1 1 2 4 8 16.....
+
+WAP to print all common and uncommon elements  from given 2 string
+string......
+string  is character array which always defiine i doublw quotes...and it represtent in two ways..
+1. s1....static string which memoery allocated at compile time
+java c 8byte
+
+
+2. s2...dynamic string which memoery allocated at run time
+8byte
+
+*methods
+
+1.char charAt(int index) 
+
+java
+0123
+
+eg.   String s1="java";
+      sop(s1.charAt(2));
+       output:v
+
+2.int length()
+      String s1="java";
+      sop(s1.length());
+       output:4
+interview que
+length.....its array count vs length().....its count of string charater
+
+3.boolean equals(s2)
+  boolean equalsIgnoreCase(s2)
+
+eg...
+String s1="jaVa";
+String s2="jaVa";
+String s3="java";
+ sop(s1.equals(s2));--->True
+ sop(s1.equals(s3));--->false
+ sop(s1.equalsIgnoreCase(s3));---True
+
+4.String substring(start value);
+  string subString(Start,end);
+program
+0123456  
+  String(s1.subString(3));   //gram    internal of this(3,s1.length());
+   String(s1.subString(2,5));//ogr
+
+application google search
+gmail recommdn
+
+
+5.String toLowerCase()
+  String toUpperCase()
+ 
+  String s1="Java";
+  sop(s1.toLowerCase());---java
+  sop(s1.toUpperCase());---JAVA
+
+
+6.int compareTo(s2)
+eg..
+String s1="abc";
+String s1="abc";
+sop(s1.compareTo(s2));
+
+a-b 
+97-98--> -1
+
+sop(s1.compareTo(s1));
+b-a
+98-97-->1
+
+s1="abc";
+s2="abc";
+sop(s1.compareTo(s2));
+
+output; a-a-->0
+        b-b-->0
+        c-c-->0
+
+
+7.char[] toCharArray()
+
+String s1="abcd";
+ char ch[]=s1.toCharArray();
+ SOP(ch.length)--->4
+
+s1=abcd";
+ch[]=cdba
+
+ sop(Arrays.sort(ch));---->abcd
+
+
+8.String concat(s2)
+  String s1="ja";
+  String s2="va";
+  sop(s1.concat(s2));
+OUTput:java
+
+  String s1="java";
+  String s2="Class";
+  sop(s1.concat(s2));
+OUTput:JavaClass
+
+
+
+"+" opertor
+  String s1="java";
+  String s2="Class";
+  String s3="@DMG";
+  sop(s1.concat(s2));
+
+  sop(s1+" "+s2+" "+s3);
+output-->Java class @DMG
+
+
+
+
+
+hw total=15
+find first n total special  numberfor eg 15;
+interview quee`
+
+
+11-4-2023
+
+
+Inheritance
+
+1.it is the process of acquiring old class propperty into new class,where old class clled as super class,parent class,base class,master class and new class clled as subclass,child class,derived class and slave class
+types---
+single level
+multiple level
+hybrid
+multilevel
+herachical
+
+extenses keyword 
+it is used tomconnetc teo classes tohethrt where firdt clas  to\\represt new prprorty nd 2nd class repres old property
+eg 
+claas A
+{
+   int x=10;
+}
+class b exteneds A
+{
+   int y=20;
+}
+class test{
+    psv
+    B obj=new B{];
+   sop(obj.x);
+   sop(obj.y);
+
+
+
+claas A
+{
+   int x=10;
+}
+class b exteneds A
+{
+   int y=20;
+}
+class c extensd B
+{
+   int y=30;
+}
+
+
+operator overloading virtual funvtion,friend function
+
+method overriding and ovder loading
+
+in merthod overiridng two methods having same name and same paparameteres but diffeterent body strucutre
+
+ void set(int a,int b)
+{
+   int c=a+b;
+   sop(c);
+}
+
+
+or
+
+void set(int a,int b)
+{
+   int c=a-b;
+   sop(c);
+}
+
+
+overloding
+
+when two or more method having same name but differnet paramters is called method overloding
+
+void set(int a,int b)
+{
+   int c=a+b;
+   sop(c);
+}
+
+
+or
+
+void add(float a,float b)
+{
+   float c=a+b;
+   sop(c);
+}
+
+
+
+
+overriding
+
+class A
+{
+    void add(int a,int b)
+    {
+        int c=a+b;
+        sop(c);
+    }
+}
+class B extends A
+{
+    void add(int a,int b)
+    {
+       SOP("a="+a);
+       SOP(“b=”+b);
+       int c=a+b;
+       SOP(“c=”+c);
+}
+}
+
+class overriding
+{
+     Psvm(sting args[])
+    {
+       B Obj=new B();
+       obj.add(25,5);
+}
+}
+
+
+
+
+
+
+
+
+
+
+class A
+{
+    void add(int a,int b)
+    {
+        int c=a+b;
+        sop(c);
+    }
+}
+class B extends A
+{
+    void add(float a,float b)
+    {
+       
+      float c=a+b;
+       SOP(“c=”+c);
+}
+}
+ class overriding
+{
+     Psvm(sting args[])
+    {
+       B Obj=new B();
+       obj.add(25,5);
+       obj.add(7.2f,2.7f);
+
+}  
+
+
+ 
+
+-----------------------------------------------------------
+super keyword--
+it is used to access super CLASS property form subclass which is ovrrided into subclass
+
+
+class A
+{
+    void add(int a,int b)
+    {
+        int c=a+b;
+        sop(c);
+    }
+}
+class B extends A
+{
+    void add(float a,float b)
+    {
+        SOP("a="+a);
+       SOP(“b=”+b);
+      super.add(a,b);
+}
+}
+ class overriding
+{
+     Psvm(sting args[])
+    {
+       B Obj=new B();
+       obj.add(25,5);
+       obj.add(7.2f,2.7f);
+
+}  
+
+how to access base class property and how many wayes  to acess it??
+3ways ----
+self obj 
+create its deerived class 
+obj use super keywords
+
+
+
+
+
+
+--------------------------------------------------------------------------------------|
+constructor====>
+it is the specialk comp of the class having same name as a class name always excyuted when obj is created
+it used to initilaize default values
+and its having default and parmaterized type.
+
+
+
+class first
+{
+ first()
+  {sop(“in defualt”);
+}
+
+first (int a)
+{
+  sop(“a=”,+a)
+
+}first(int a,int b);
+
+{
+  sop(a+ b);
+}
+}
+class construcotr
+{
+psvm(string args([])
+{
+    first f1=new first();
+    first f1=new first(10);
+    first f1=new first(10,20);
+}
+}
+
+
+when the class haing more then two consturctor than it is called overloading
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+20 april 2023
+
+extending and interface
+
+1.extend keywords not only combine two classes but also combine two interfaces
+interface first
+{
+  void show();
+}
+interface abc extends first
+{
+   voif fun();
+}
+
+class xyz implements abc
+{
+
+------------
+---------
+-------
+-----------
+----------
+}
+}
+
+
+-------------------------------------------------------
+class class extends
+interface class implements
+interfaces interfaces extends
+
+-------------------------------------------------------
+multiple inheritance--
+it is not directly supported in java using classes concept but,
+we can implement this interfaces and class concept.
+
+
+class A
+{
+   void show()
+   {
+       System.out.println("In show");
+   }
+}
+interface B
+{
+       void disp();
+}
+interface C
+{
+       void fun();
+}
+class D extends A implements B,C
+{
+      public void disp()
+{
+      sop("In disp");
+}
+public void fun()
+{
+      sop("In fun");
+}
+class test
+{ psvm
+    {
+       D obj=new D();
+       obj.fun();
+       obj.show();
+       obj.disp();
+     }
+}
+
+
+-----------------------------------------------------------------------------------------------
+Package construction and deployment
+-package is nothing but header file are labery used to construct nd application .
+it comes under two cataegory :
+1 System define  pacakegs 
+2.user define packeage
+-util,io,lang,sql,net,applet this arew this somre eg of system define packages
+
+WAP to dispaly current date and time
+
+import java.util.*;
+class datetime
+{
+   public static void main(String args[])
+   {
+      Date d1=new Date();
+      System.Out.println(d1);
+   }
+}
+
+-----------------------------------------------------------------------------------
+user defined package
+it is used to construct costimeze library as per the requirement which having two parts
+
+1. backend part
+2. front end part
+
+==================================================================
+WAP to construct a package to identify given number is even or odd
+
+           Backend                                     |                            frontend
+                                                       |
+                                                       | import abc.*;
+                                                       | import java.util.*;
+                                                       | class front
+                                                       | {
+                                                       |     Scane
+                                                       |
+                                                       |
+                                                       | 
+                                                       |
+                                                       |
+                                                       |
+                                                       |
+                                                       |
+
+
+
+
+Exception
+
+
+
+
+class A
+{
+     int x=10;
+}
+class B extends A implements Run
+{int y=20;
+}
+
+
+
+25 april 2023
+
+
+exception handling===>
+exception are nothing but run time error occur due to iligel logic strutures.it terminates the flow of execution and its having two types 1 System defined exception and 2 user defined excpetion.
+1.System defined exception defination and declaration alrady known to the sysytem so it automatically managed in the applln
+
+**************************
+1]
+try....catch Block
+ Try block used to defined those statement which may generate exception at runtime.
+ catch block use to defined error msgs.
+
+2] Multicatch block
+multicatch used to handle multiple exception in an application each catch block is reponsible for separate exception 
+
+**********************************************
+user defined exception
+1 in user defined excpetion defina declart is mANUALLY defined in application
+2 throw statement  is used to defined allocation in an application
+
+
+
+++++++++throw statemnet is used to handle user defined exception only where as it is write in block
+++++++++throws    (S) statement is used to handle system defined exception it is always write with main
+
+
+
+wap to handle excpetion for invalid 1user name 
+2for invalid mobile number
+3 for invalid strong password
+
+
+
+***finally Block
+it is always exected at the end of the applicarion and its not matter where the exception occure or not.
+
+
+
+------------------------------------------------------------------------------------------------
+applet and graphics programming
+it is used to design application in the graphics mode which coonsisit of lines rectangle circle color fonts etc
+
+a lagre info is very hard to understand so graphics componenet it used to represent it in simple way like bar charts,grapgh etc
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
