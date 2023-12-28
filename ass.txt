@@ -1,0 +1,1 @@
+wap to read all the number in one file to perform substartcion avaegar max num b into diff files

@@ -1,0 +1,11 @@
+WAP to consrtuct a package number and find
+1 Prime 
+2 Reverse 
+3 special mul add same
+4 amrstrong 
+5 didgit sorted numb
+
+
+
+public static void prime
+ 
